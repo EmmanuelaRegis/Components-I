@@ -15,24 +15,30 @@ function menuMaker(linksArray) {
 
   menuWrapper.appendChild(menuList);
 
+  menuWrapper.classList.add('menu');
+
   linksArray.array.forEach(linkText => {
     const link = document.createElement('li');
-    link.textContent = linkText
+    link.textContent = linkText;
     menuList.appendChild(link);
   })
 
   const hamMenu = document.querySelector('.menu-button');
 
-  hamMenu.addEventListener('click', () =>{
-   menuWrapper.classList.toggle('open--menu');
+  hamMenu.addEventListener('click', () => {
+   menuWrapper.classList.toggle('menu--open');
   })
 
-  return menuWrapper
+  return menuWrapper;
 }
-console.log(menuMaker(menuItems));
 
-// document.querySelector('.header').appendChild(menuMaker(menuItems));
+// console.log(menuMaker(menuItems));
 
+/**
+ * const newMenu = menuMaker(menuItems);
+ * const headerElem = document.querySelector('.header');
+ * headerElem.appendChild(newMenu);
+ */
 
 
 /*

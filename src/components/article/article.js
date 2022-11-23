@@ -90,7 +90,7 @@ const data = [
   }
 ];
 function articleMaker(articleObj) {
-  const articleWraper = document.createElement('div');
+  const articleWrapper = document.createElement('div');
   const articleTitle = document.createElement('h2');
   const articleDate = document.createElement('p');
   const articleParagraphOne = document.createElement('p');
@@ -99,7 +99,7 @@ function articleMaker(articleObj) {
   const expandButton = document.createElement('span');
 
   articleWrapper.classList.add('article');
-  articleDate.classList.add('date')
+  articleDate.classList.add('date');
   expandButton.classList.add('expandButon');
 
   articleWrapper.appendChild(articleTitle);
